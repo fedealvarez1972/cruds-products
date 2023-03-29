@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --body:#f0f0f0;
+  --white:#fff;
+  --black: #000;
+  --blue:#5656ea;
+  --grayInput:#cbc8c8;
+  --red:#f52a2a;
+  --fuentePrincipal: monospace;
+}
+
+body{
+  font-family:var(--fuentePrincipal);
+  background-color: var(--body);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center; 
+  gap: 20px;
+}
+
+.form{
+  background-color:var(--white);
+  color: var(--black);
+  width: 350px;
+  height: 270px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow:0px 10px 10px -6px #000;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form label{
+  font-size: 18px;
+  height: bold;
+}
+
+.form input {
+  padding: 5px;
+  width: 100%;
+  border: none;
+  background-color: var(--grayInput);
+  color: var(--black);
+  border-radius: 10px;  
+}
+
+.form button{
+  border:none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 10px 10px -8px #000;
+  cursor: pointer;
+}
+
+/*contenedor listado*/
+.containerList{
+  background-color: var(--white);
+  width: 400px;
+  height: 200px;
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px -6px #000;
+}
+
+.containerList span{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.buttonList{
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: space-between;
+
+}
+
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-editar{
+  padding: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+  
+
+.button-elimimar{
+  padding: 10px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.title-form{
+  text-align: center;
+}
+
+.title-products{
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+
+  /* Estilos a aplicar cuando el ancho de pantalla es menor o igual a 600px */
+  .container{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .containerList{
+    width: 350px;
+
+  }
+
+
+}
